@@ -1,0 +1,58 @@
+<!doctype html>
+
+<html>
+	<head>
+		<title>Page Title</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="initial-scale=1.0">
+        <link type="text/css" href="style.css" rel="stylesheet">
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <script type="text/javascript" src="script.js"></script>
+	</head>
+
+	<body>
+        <div class="container">
+            <!----- pantalla inicio -->
+            <div class="logojuego">
+                <h1>¿Quieres jugar a pares o nones?</h1>
+                <button ><h1>SI</h1></button>
+                <button><h1>NO</h1></button>
+                 <script>
+                function elige(){
+                document.getElementById("datos").style.display="block";
+                }
+        </script>
+            </div>
+            
+            <!-----pantalla no-->
+            <div class="noQuiero" style="display:none">
+                <h1>Venga animate es solo un rato</h1>
+                <button onclick="elige()"><h1>Ok</h1></button>
+            </div>
+            <div id="datos" style="display:none">
+                <h1>¿que quieres pares o nones?</h1>
+                 <label for='pares'>Pares</label>
+                <input id='pares' type ='radio' name='eleccion' value='pares'>
+                <label for='impares'>Impares</label>
+                <input id='impares' type ='radio' name='eleccion' value='impares'>
+                <h1>Elige un numero</h1>
+                <img src="1.jpg">
+                <img src="2.jpg">
+                <img src="TRES%20DEDOS.jpg">
+                <img src="4.jpg">
+                <img src="5.png">
+            </div>
+            <div class="maquina" style="display:none">
+                <h1>La maquina elige</h1>
+                <img src="counter2.gif">
+                <button>Resultado</button>
+            </div>
+            <div class="resultado" style="display:none">
+                <h1 class="gana"><img src="gana.gif">Has ganado</h1>
+                <h1 class="pierde"><img src="perdedor.gif">Has perdido</h1>
+            </div>
+        </div>
+        
+       
+	</body>
+</html>
