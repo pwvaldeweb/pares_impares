@@ -5,7 +5,8 @@
 		<title>Page Title</title>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="initial-scale=1.0">
-        <link type="text/css" href="style.css" rel="stylesheet"><script type="text/javascript" src="script.js"></script>
+        <link type="text/css" href="style.css" rel="stylesheet">
+       <script type="text/javascript" src="script.js"></script>
         <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
         
 	</head>
@@ -15,9 +16,8 @@
             <!----- pantalla inicio -->
             <div id="inicio" class="logojuego">
                 <h1>¿Quieres jugar a pares o nones?</h1>
-                <button id="si" ><h1>SI</h1></button>
-                <button id="no" ><h1>NO</h1></button>
-        
+                <button id="si" >SI</button>
+                <button id="no" >NO</button>
             </div>
             
             <!-----pantalla no-->
@@ -25,6 +25,7 @@
                 <h1>Venga animate es solo un rato</h1>
                 <button><h1>Ok</h1></button>
             </div>
+            
             <!-----pantalla si-->
             <div id="datos" style="display:none">
                 <h1>¿que quieres pares o nones?</h1>
@@ -33,39 +34,29 @@
                 <label for='impares'>Impares</label>
                 <input id='impares' type ='radio' name='eleccion' value='impares'>
                 <h1>Elige un numero</h1>
-                <a href="javascript(siguiente)" id="cero"> <img  src="cerrada0.jpg"> </a>
-                <a href="javascript:void(siguiente)" id="uno"><img  src="1.jpg"> </a>
-                <a href="javascript:void(siguiente)" id="dos"><img src="2.jpg"></a>
-                <a href="javascript:void(siguiente)" id="tres"><img id="tres" src="TRES%20DEDOS.jpg"></a>
-                <a href="javascript:void(siguiente)" id="cuatro"><img id="cuatro" src="4.jpg"></a>
-                <a href="javascript:void(siguiente)" id="cinco"><img id="cinco" src="5.png"></a>
+                
+                <button id="cero"><img src="cerrada0.jpg"></button>
+                <button id="uno"> <img  src="1.jpg"> </button>
+                <button id="dos"><img src="2.jpg"></button>
+                <button id="tres"><img id="tres" src="TRES%20DEDOS.jpg"></button>
+                <button id="cuatro"><img id="cuatro" src="4.jpg"></button>
+                <button id="cinco"><img id="cinco" src="5.png"></button>
             </div>
-            <div class="maquina" style="display:none">
+            <div id="maquina" style="display:none">
                 <h1>La maquina elige</h1>
-                <img src="counter2.gif">
-                <button>Resultado</button>
+                <button id="resultado">Resultado</button>
+                <img  id="pensar" src="counter2.gif">
+                <p id="numero"></p>
+                
             </div>
-            <div class="resultado" style="display:none">
+    <div class="resultado" style="display:none">
                 <h1 class="gana"><img src="gana.gif">Has ganado</h1>
                 <h1 class="pierde"><img src="perdedor.gif">Has perdido</h1>
             </div>
         </div>
-        <!---<script>
-                function eligesi(){
-                document.getElementById("datos").style.display="block";
-                document.getElementById("inicio").style.display="none";
-                
-                }
-                function eligeno(){
-                document.getElementById("noQuiero").style.display="block";
-                document.getElementById("inicio").style.display="none";
-                }
-                function empezar(){
-                
-                document.getElementById("inicio").style.display="block";
-                document.getElementById("noQuiero").style.display="none";
-                }
-        </script> -->
-     <script type="text/javascript" src="script.js"></script>  
+        
+  
+         <script type="text/javascript" src="script.js"></script>
+       
 	</body>
 </html>
