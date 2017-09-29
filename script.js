@@ -11,3 +11,7 @@ document.getElementById("noQuiero").onclick = function empezar() {
 document.getElementById("inicio").style.display = "block";
 document.getElementById("noQuiero").style.display = "none";
 }
+document.getElementById("siguiente").onclick = function calcular() {
+document.getElementById("resultado").style.display = "block";
+document.getElementById("datos").style.display = "none";
+}
