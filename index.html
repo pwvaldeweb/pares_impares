@@ -5,9 +5,9 @@
 		<title>Page Title</title>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="initial-scale=1.0">
-        <link type="text/css" href="style.css" rel="stylesheet">
+        <link type="text/css" href="style.css" rel="stylesheet"><script type="text/javascript" src="script.js"></script>
         <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-        <script type="text/javascript" src="script.js"></script>
+        
 	</head>
 
 	<body>
@@ -15,15 +15,15 @@
             <!----- pantalla inicio -->
             <div id="inicio" class="logojuego">
                 <h1>¿Quieres jugar a pares o nones?</h1>
-                <button onclick="eligesi()"><h1>SI</h1></button>
-                <button onclick="eligeno()"><h1>NO</h1></button>
+                <button id="si" ><h1>SI</h1></button>
+                <button id="no" ><h1>NO</h1></button>
         
             </div>
             
             <!-----pantalla no-->
             <div id="noQuiero" style="display:none">
                 <h1>Venga animate es solo un rato</h1>
-                <button onclick="empezar()"><h1>Ok</h1></button>
+                <button><h1>Ok</h1></button>
             </div>
             <!-----pantalla si-->
             <div id="datos" style="display:none">
@@ -33,11 +33,12 @@
                 <label for='impares'>Impares</label>
                 <input id='impares' type ='radio' name='eleccion' value='impares'>
                 <h1>Elige un numero</h1>
-                <img src="1.jpg">
-                <img src="2.jpg">
-                <img src="TRES%20DEDOS.jpg">
-                <img src="4.jpg">
-                <img src="5.png">
+                <a id="cero"> <img  src="cerrada0.jpg"> </a>
+                <a id="uno"><img  src="1.jpg"> </a>
+                <a id="dos"><img src="2.jpg"></a>
+                <a id="tres"><img id="tres" src="TRES%20DEDOS.jpg"></a>
+                <a id="cuatro"><img id="cuatro" src="4.jpg"></a>
+                <a id="cinco"><img id="cinco" src="5.png"></a>
             </div>
             <div class="maquina" style="display:none">
                 <h1>La maquina elige</h1>
@@ -49,7 +50,7 @@
                 <h1 class="pierde"><img src="perdedor.gif">Has perdido</h1>
             </div>
         </div>
-        <script>
+        <!---<script>
                 function eligesi(){
                 document.getElementById("datos").style.display="block";
                 document.getElementById("inicio").style.display="none";
@@ -64,7 +65,7 @@
                 document.getElementById("inicio").style.display="block";
                 document.getElementById("noQuiero").style.display="none";
                 }
-        </script>
-       
+        </script> -->
+     <script type="text/javascript" src="script.js"></script>  
 	</body>
 </html>
