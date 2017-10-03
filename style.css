@@ -6,3 +6,6 @@ img{
 #numero{
     display: none;
 }
+#numero0 #numero1 #numero2 #numero3 #numero4 #numero5{
+    display: none;
+} 

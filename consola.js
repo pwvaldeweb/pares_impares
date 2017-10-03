@@ -1,4 +1,4 @@
-alert("hola mundo");
+
 var jugador ="pares";
 var maquina="nones";
 var jugadajugador=7;
